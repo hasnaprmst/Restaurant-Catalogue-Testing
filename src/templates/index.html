@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free restaurant catalogue for you">
+  <meta name="theme-color" content="#952323">
+  
+  <link rel="icon" href="./favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="manifest" href="./app.webmanifest">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+  <title>Restaurant Catalogue</title>
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+  
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+    <div class="app-bar__brand">
+      <h1>Restaurant Catalogue</h1>
+      <!-- <a href="#/list"><h1>Restaurant Catalogue</h1></a> -->
+    </div>
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="#/list">Home</a></li>
+        <li><a href="#/favorite">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/hasna-paramesti/">About Us</a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero__inner">
+      <div class="picture-wrapper">
+        <picture>
+          <source media="(max-width: 600px)" srcset="/image/hero-image_2-small.jpg" />
+          <source srcset="/image/hero-image_2-large.jpg" />
+          <img src="/image/hero-image_2" alt="Hero image">
+        </picture>
+      </div>
+      <div class="hero__overlay">
+        <h2 class="hero__title">Find your favorite restaurant</h2>
+        <p class="hero__tagline">Find your favorite restaurant and add it to your favorite list!</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent" tabindex="0"></main>
+  <footer>
+    <!-- <p>All data obtained from <a href="https://restaurant-api.dicoding.dev" target="_blank" rel="noreferrer">TheRestaurantDB</a></p> -->
+    <p>© 2023 Restaurant Catalogue. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
